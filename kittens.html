@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/kittens.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Kitten Care Tutorial</title>
+</head>
+
+<body>
+  <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="ourmission.html">Mission Statement</a>
+              <br>
+              <a class="dropdown-item" href="ourboard.html">Board of Directors</a>
+
+          </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" href="news.html">News</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Get Help</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="traploanprogram.html">Trap Loan Program</a>
+              <br>
+              <a class="dropdown-item" href="faq.html">TNR FAQ</a>
+
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="volunteer.html">Volunteer With Us!</a>
+              <br>
+              <a class="dropdown-item" href="donate.html">Donate</a>
+
+          </div>
+      </li>
+
+
+
+      <li class="nav-item">
+          <a class="nav-link" href="resources.html">Links and Resources</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+
+  </ul>
+    <div class="page-header bg-info" id="header">
+        <h1>So...you found some kittens.
+        <small>In order to best help you and the kittens, we first need to determine their age.</small></h1>
+    </div>
+
+
+
+    <div id="ages">
+
+        <h3>Click the radio buttons for pictures and descriptions of kitten age stages. Once you've determined the age of your kittens, click "Next Steps" for care instructions.</h3>
+
+        <label><input type="radio" name="kitten-age" value="newborn"> Newborn</label><br>
+        <label><input type="radio" name="kitten-age" value="twoweeks"> 2 weeks</label><br>
+        <label><input type="radio" name="kitten-age" value="threefourweeks"> 3 to 4 weeks</label><br>
+        <label><input type="radio" name="kitten-age" value="fivesixweeks"> 5 to 6 weeks</label><br>
+        <label><input type="radio" name="kitten-age" value="seveneightweeks"> 7 to 8 weeks</label><br>
+        <label><input type="radio" name="kitten-age" value="tentwelveweeks"> 10 to 12 weeks</label><br>
+        <label><input type="radio" name="kitten-age" value="threefourmonths"> 3 to 4 months</label><br>
+      </div>
+    <div class="container newborn age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/agenewborn.jpg" class="img-fluid kitten-age-pics" alt="Newborn Kitten">
+              </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="newborn-descrip">
+              <h1>Newborn</h1><br>
+              <ul>
+                <li>Eyes are closed</li>
+                <li>Kittens can wiggle in place but cannot move around on their own</li>
+                <li>Kittens are completely dependent on mom to feed them, keep them warm, and help them eliminate</li>
+              </ul>
+              <button type="button" class="btn btn-primary" id="newborn-button">Next Steps</button>
+            </div>
+            <div class="next-steps" id="newborn-next">
+              <h1>Next steps</h1><br>
+              <ul>
+                <li>Observe. Is mom around?</li>
+                <li>If you have determined that mom has abandoned them, gently put the kittens in a blanket-lined box or carrier and bring them inside</li>
+                <li>Keep them warm. A hot water bottle (but not too hot) wrapped in a towel works well</li>
+                <li>Bottle or syringe feed with KMR (kitten milk replacer). Do not give any type of milk other than KMR!</li>
+                <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+              </ul>
+              <button type="button" class="btn btn-primary" id="newborn-back-button">Back</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container two-weeks age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age2weeks.jpg" class="img-fluid kitten-age-pics" alt="Two-Week-Old Kitten">
+                </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="two-weeks-descrip">
+                <h1>Two Weeks Old</h1><br>
+                <ul>
+                  <li>Kittens' eyes are open</li>
+                  <li>Kittens are starting to crawl</li>
+                  <li>Their senses are starting to develop.</li>
+                  <li>Kittens are still completely dependent on mom</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="two-weeks-button">Next Steps</button>
+            </div>
+            <div class="next-steps" id="two-weeks-next">
+              <h1>Next Steps</h1><br>
+              <ul>
+                <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+              </ul>
+              <button type="button" class="btn btn-primary" id="two-weeks-back-button">Back</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container threefour-weeks age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age3-4weeks.jpg" class="img-fluid kitten-age-pics" alt="Three- to Four-Week-Old Kitten">
+            </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="threefour-weeks-descrip">
+                <h1>Three to four weeks old</h1><br>
+                <ul>
+                  <li>Kittens are steadier on their feet, and will run around and play</li>
+                  <li>Kittens' eyes are still blue</li>
+                  <li>They are starting to use the litterbox (if provided) and eliminate on their own</li>
+                  <li>They are still getting most of their food from mom's milk, but begin to nibble on solid food</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="threefour-weeks-button">Next Steps</button>
+            </div>
+            <div class="next-steps" id="threefour-weeks-next">
+              <h1>Next Steps</h1><br>
+              <ul>
+                <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+              </ul>
+              <button type="button" class="btn btn-primary" id="threefour-weeks-back-button">Back</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container fivesix-weeks age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age5-6weeks.jpg" class="img-fluid kitten-age-pics" alt="Five- to Six-Week-Old Kitten">
+            </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="fivesix-weeks-descrip">
+                <h1>Five to six weeks old</h1><br>
+                <ul>
+                  <li>Kittens' eyes have turned into their adult color -- usually green or yellow</li>
+                  <li>Kittens are very active and learning to stalk, jump, and chase</li>
+                  <li>Kittens may still be nursing but eating solid food as well</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="fivesix-weeks-button">Next Steps</button>
+            </div>
+            <div class="next-steps" id="fivesix-weeks-next">
+              <h1>Next Steps</h1>
+              <ul>
+                <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+              </ul>
+              <button type="button" class="btn btn-primary" id="fivesix-weeks-back-button">Back</button>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <div class="container seveneight-weeks age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age7-8weeks.JPG" class="img-fluid kitten-age-pics" alt="Seven- to Eight-Week-Old Kitten">
+            </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="seveneight-weeks-descrip">
+              <h1>Seven to eight weeks old</h1><br>
+              <ul>
+                <li>Kittens are weaned, and spending less and less time with mom</li>
+                <li>Kittens are beginning to venture out on their own</li>
+              </ul>
+                <button type="button" class="btn btn-primary" id ="seveneight-weeks-button">Next Steps</button>
+              </div>
+              <div class="next-steps" id="seveneight-weeks-next">
+                <h1>Next Steps</h1>
+                <ul>
+                  <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="seveneight-weeks-back-button">Back</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container tentwelve-weeks age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age10-12weeks.jpg" class="img-fluid kitten-age-pics" alt="Ten- To Twelve-Week-Old Kitten">
+            </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="tentwelve-weeks-descrip">
+                <h1>Ten to twelve weeks old</h1><br>
+                <ul>
+                  <li>Kittens look like miniature adults</li>
+                  <li>They are old enough to be seperated from mom and littermates and find forever homes</li>
+                  <li>Kittens are old enough to be spayed and neutered</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="tentwelve-weeks-button">Next Steps</button>
+              </div>
+              <div class="next-steps" id="tentwelve-weeks-next">
+                <h1>Next Steps</h1>
+                <ul>
+                  <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="tentwelve-weeks-back-button">Back</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container threefour-months age-info">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/age3-4months.jpg" class="img-fluid kitten-age-pics" alt="Three- To Four-Month-Old Kittens">
+            </div>
+            <div class="col-xs-6">
+              <div class="descrip" id="threefour-months-descrip">
+                <h1>Three to four months old</h1><br>
+                <ul>
+                  <li>Kittens are completely self-sufficient</li>
+                  <li>Adult teeth are beginning to come in</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="threefour-months-button">Next Steps</button>
+              </div>
+              <div class="next-steps" id="threefour-months-next">
+                <h1>Next Steps</h1>
+                <ul>
+                  <li>Visit the Alley Cat Allies <a href="https://www.alleycat.org/community-cat-care/caring-for-neonatal-kittens/">guide</a> for comprehensive information.</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="threefour-months-back-button">Back</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

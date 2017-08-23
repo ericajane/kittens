@@ -1,0 +1,39 @@
+#header {
+  padding: 20px;
+}
+.age-info{
+        padding: 20px;
+        display: none;
+        margin-top: 30px;
+        border: 1px solid #000;
+    }
+
+  #ages{
+    padding: 20px;
+  }
+  .kitten-age-pics {
+    border: 2px solid blue;
+  }
+
+  .next-steps {
+    display: none;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  .success {
+    color: #468847;
+    background-color: #dff0d8;
+  }
+
+  .error {
+    color: #b94a48;
+    background-color: #f2dede;
+  }
+
+  #vol-checkboxes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }

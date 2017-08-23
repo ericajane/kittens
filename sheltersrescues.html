@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/shelters.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Find a Shelter or Rescue Group</title>
+</head>
+
+<body>
+  <h1>Enter your zip code to find a shelter or rescue group near you:</h1>
+  <form id="form-container" class="form-container">
+      <label for="zip">Zip Code: </label><input type="text" id="zip" value="">
+
+      <button id="submit-btn">Submit</button>
+  </form>
+  <div class="shelters-container">
+    <h3 id="shelters-header"></h3>
+    <ul id="shelterlist" class="shelters-list"></ul>
+  </div>
+</body>
+</html>
